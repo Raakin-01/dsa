@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c74b8c742bea0e46",
+        "id": "033ab913e5f4ed18",
         "type": "tabs",
         "children": [
           {
-            "id": "291332098b15579c",
+            "id": "95a78cbaaecb41ca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "git"
             }
           }
         ]
@@ -152,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of git"
             }
           },
           {
@@ -189,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "291332098b15579c",
+  "active": "95a78cbaaecb41ca",
   "lastOpenFiles": [
     "git.md",
     "Untitled.base",
