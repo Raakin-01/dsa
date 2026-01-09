@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "java.md",
+                "file": "git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "java"
+              "title": "git"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "java.md",
+                "file": "git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of java"
+              "title": "Outline of git"
             }
           },
           {
@@ -196,9 +196,9 @@
   },
   "active": "95a78cbaaecb41ca",
   "lastOpenFiles": [
+    "java.md",
     "git.md",
     "Untitled.base",
-    "java.md",
     "ok.md",
     "Welcome.md"
   ]
