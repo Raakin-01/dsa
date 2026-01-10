@@ -176,3 +176,55 @@
 `D       names.txt`
 
 
+**==stash command:==**
+-> in this we have a files but we will stage and commit them but later for now it should be like the most recent commit .... so the old files are shown but when stash is popped then the new files         are shown and then they are staged then committed.
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ touch surnames.txt`
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git add .`
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git status`
+`On branch master`
+`Changes to be committed:`
+  `(use "git restore --staged <file>..." to unstage)`
+        `deleted:    names.txt`
+        `new file:   surnames.txt`
+
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git log`
+`commit 60e2d02318f0ecd07c5c891cdffbe2ef02990c05 (HEAD -> master)`
+`Author: Raakin-01 <shaikraakin@gmail.com>`
+`Date:   Fri Jan 9 23:41:44 2026 +0530`
+
+    `names.txt modified`
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git status`
+`On branch master`
+`Changes to be committed:`
+  `(use "git restore --staged <file>..." to unstage)`
+        `deleted:    names.txt`
+        `new file:   surnames.txt`
+
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git stash`
+`Saved working directory and index state WIP on master: 60e2d02 names.txt modified`
+
+`hp@DESKTOP-0FFMSPJ MINGW64 ~/project (master)`
+`$ git stash pop`
+`On branch master`
+`Changes to be committed:`
+  `(use "git restore --staged <file>..." to unstage)`
+        `new file:   surnames.txt`
+
+`Changes not staged for commit:`
+  `(use "git add/rm <file>..." to update what will be committed)`
+  `(use "git restore <file>..." to discard changes in working directory)`
+        `deleted:    names.txt`
+
+`Dropped refs/stash@{0} (4c703776fe4eaa4c944c851dd57c278baed44c6d)`
