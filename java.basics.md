@@ -90,5 +90,45 @@ the java code to return string data types
         `int sum3=a+b;`  
         `return sum3;`  
     `}`
+    
 ==**2)strings:**==
 
+`import java.util.Scanner;`  
+  
+`public class Greeting {`  
+    `public static void main(String[] args){`  
+        `//String  message= greet();`  
+        `//System.out.println(message);        Scanner in= new Scanner(System.in);`  
+        `System.out.print("enter you're name: ");`  
+        `String name=in.nextLine();`  
+        `String person=mygreet(name);`  
+        `System.out.println(person);`  
+    `}`  
+  
+    `static String mygreet(String name) {`  
+        `String greet ="hi "+name;`  
+        `return greet;`  
+    `}`
+
+==**java program for  swapping of 2 numbers:**==
+
+`import java.util.*;`  
+`public class swap {`  
+    `public static void main(String[] args) {`  
+        `int a, b;`  
+        `Scanner in = new Scanner(System.in);`  
+        `System.out.println("enter the value of a:");`  
+        `a = in.nextInt();`  
+        `System.out.println("enter the value of b:");`  
+        `b = in.nextInt();`  
+        `System.out.println("before swap:");`  
+        `System.out.println("a:" + a);`  
+        `System.out.println("b:" + b);`  
+        `int temp = a;`  
+        `a = b;`  
+        `b = temp;`  
+        `System.out.println("after swap:");`  
+        `System.out.println("a:" + a);`  
+        `System.out.println("b:" + b);`  
+    `}`  
+`}`
