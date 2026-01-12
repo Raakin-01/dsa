@@ -132,3 +132,68 @@ the java code to return string data types
         `System.out.println("b:" + b);`  
     `}`  
 `}`
+
+->java does not actually has pass by reference. cause java has no pointers.
+->java has only pass by value.
+java programme for swapping of 2 numbers does not work cause there is no refence being passed like pointers in c.
+psvm(){
+int a=10;
+int b=20;
+swap(a,b);
+}
+static int swap(int num1,int num2){
+int temp=num1;
+num1=num2;
+num2=temp;
+return a,b;
+}
+
+->this program actually does not work as this is taking in pass by reference .
+  
+	a=10;
+    num1=10;
+
+      b=20;
+      num2=20;
+  but
+  a!=num1.
+  ->only the value is same.
+  ->in this an entire new object is created and shown.
+but when an ==array== is being used :
+->the array is pointing to a object.
+->if an array called change is used in a function/method then the objects value also changes as this new array in the function is also pointing to the same object .
+
+==**scoping in java functions/methods:**==
+`import java.util.*;`  
+`public class Block {`  
+    `public static void main(String[] args){`  
+        `int a =10;`  
+        `int b=20;`  
+        `{`  
+            `int a=100;`  
+        `}`  
+    `}`  
+`}`
+->this is wrong as :
+1)the block already has a initialized the variable a.
+2)the variables initialized inside the block cannot be accessed outside the block.
+3)the variables initialized outside the bock can be accessed inside the block.
+
+`import java.util.*;`  
+`public class Block {`  
+    `public static void main(String[] args){`  
+        `int a =10;`  
+        `int b=20;`  
+        `{`  
+            `int c=100;`  
+            `System.out.println(c);`  
+        `}`  
+        `int c =99;`  
+        `System.out.println(c);`  
+    `}`  
+`}`
+
+->this is correct as:
+->this prints output of both the values of c inside the block and outside the block of code inside the psvm.
+->but the output will be different because the scope of the c inside the block of code is different from the var 'c' initialized outside of the block.
+->anything initialized inside the for loop..... the scope of the variables is only inside the for loop . i.e. any var that is initialized inside the loop's scope is in the loop. outside the loop to use the variable it must be initialized again
