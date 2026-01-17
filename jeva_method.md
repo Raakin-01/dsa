@@ -196,4 +196,29 @@ but when an ==array== is being used :
 ->this is correct as:
 ->this prints output of both the values of c inside the block and outside the block of code inside the psvm.
 ->but the output will be different because the scope of the c inside the block of code is different from the var 'c' initialized outside of the block.
-->anything initialized inside the for loop..... the scope of the variables is only inside the for loop . i.e. any var that is initialized inside the loop's scope is in the loop. outside the loop to use the variable it must be initialized again
+->anything initialized inside the for loop..... the scope of the variables is only inside the for loop . i.e. any var that is initialized inside the loop's scope is in the loop. outside the loop to use the variable it must be initialized again.
+
+==**shadowing:**==
+ `public class Shadowing {`  
+    `static int x=10;`  
+    `public static void main(String[] args){`  
+        `System.out.println(x);`  
+        `fun();`  
+    `}`  
+    `static void fun(){`  
+        `System.out.println(x);`  
+    `}`  
+`}`
+
+**Variable shadowing** in Java occurs when a variable declared in an inner scope (like a method or block) shares the same name as a variable in an outer scope (like a class field), causing the inner variable to hide or "shadow" the outer one
+The inner scope's variable takes precedence within its scope, so references to that name resolve to the local version instead of the outer one, such as an instance variable. To access the shadowed outer variable, use `this` for instance fields or qualify it explicitly.
+
+`public class Shadowing {`  
+    `static int x=10;`  
+    `public static void main(String[] args) {`  
+        `System.out.println(x);`  
+        `int x = 20;`  
+        `System.out.println(x);`  
+    `}`  
+`}`
+-> in this example int x=10 is getting shadowed by the int x=20 inside the program .

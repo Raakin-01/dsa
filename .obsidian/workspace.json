@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "java_basics.md",
+                "file": "jeva_method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "java_basics"
+              "title": "jeva_method"
             }
           }
         ]
@@ -196,7 +196,7 @@
   },
   "active": "e9523e98f3ab6c71",
   "lastOpenFiles": [
-    "java_basics.md",
+    "jeva_method.md",
     "git.md",
     "Untitled.base",
     "ok.md",
