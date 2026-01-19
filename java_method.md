@@ -223,3 +223,59 @@ The inner scope's variable takes precedence within its scope, so references to t
 `}`
 -> in this example int x=10 is getting shadowed by the int x=20 inside the program .
 
+==**variable arguments:**==
+they can take as many inputs as they want
+e.g.:
+`import java.util.Arrays;`  
+`public class VarArgs {`  
+    `public static void main(String[] args){`  
+        `fun(10,20,30,40,50,60,70,80,90,100);`  
+    `}`  
+    `static void fun(int ...v){`  
+        `System.out.println(Arrays.toString(v));`  
+    `}`  
+`}`
+
+e.g.2:
+`import java.util.Arrays;`  
+`public class VarArgs {`  
+    `public static void main(String[] args){`  
+        `fun(10,20,"raakin","ron","mike","dustin");`  
+    `}`  
+    `static void fun(int a,int b,String ...v){`  
+        `System.out.println(Arrays.toString(v));`  
+    `}`  
+`}`
+in this the variable argument is kept in the end because if it is not kept in end it will be hard to distinguish between the normal arguments and the variable arguments
+==->variable arguments always at the end.==
+
+==**Function overloading/Method overloading:**==
+->in this 2 or more functions can exist with the same name if their parameters are different.
+e.g.1:
+`import java.util.*;`  
+`public class Overloading {`  
+    `public static void main(String[] args){`  
+        `fun("raakin");`  
+    `}`  
+    `static void fun(int a){`  
+        `System.out.println(a);`  
+    `}`  
+    `static void fun(String name){`  
+        `System.out.println(name);`  
+    `}`  
+`}`
+e.g.2:
+`import java.util.*;`  
+`public class Overloading {`  
+    `public static void main(String[] args){`  
+        `int x=sum(5,5,23);`  
+        `System.out.println(x);`  
+    `}`  
+    `static int sum(int a,int b){`  
+        `return a+b;`  
+    `}`  
+    `static int sum(int a,int b,int c){`  
+        `return a+b+c;`  
+    `}`  
+`}`
+
