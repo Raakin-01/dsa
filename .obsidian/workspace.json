@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "jeva_method.md",
+                "file": "java_method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jeva_method"
+              "title": "java_method"
             }
           }
         ]
@@ -194,9 +194,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e9523e98f3ab6c71",
+  "active": "f12f503ed28bc16f",
   "lastOpenFiles": [
-    "jeva_method.md",
+    "java_method.md",
     "git.md",
     "Untitled.base",
     "ok.md",

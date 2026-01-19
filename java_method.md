@@ -222,3 +222,4 @@ The inner scope's variable takes precedence within its scope, so references to t
     `}`  
 `}`
 -> in this example int x=10 is getting shadowed by the int x=20 inside the program .
+
