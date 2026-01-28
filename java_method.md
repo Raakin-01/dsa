@@ -279,3 +279,66 @@ e.g.2:
     `}`  
 `}`
 
+==**java code for prime umber or not:**==
+```
+import java.util.*;  
+public class questions {  
+    public static void main(String[] args){  
+        Scanner in=new Scanner(System.in);  
+        System.out.println("enter the value:");  
+        int n=in.nextInt();  
+        boolean ans=isprime(n);  
+        System.out.println(ans);  
+    }  
+    static boolean isprime(int n){  
+        if(n<=1){  
+            return false;  
+        }  
+        int c=2;  
+        while(c*c<=n){  
+            if(n%c==0){  
+                return false;  
+            }  
+            c++;  
+        }  
+        return (c*c>n);  
+  
+    }  
+}
+
+```
+
+==**java code for armstrong number:**==
+```
+import java.util.*;  
+public class armstrong_num {  
+    public static void main(String[] args){  
+       Scanner in=new Scanner(System.in);  
+       System.out.println("enter a number:");  
+       int n=in.nextInt();  
+       //boolean ans=isarm(n);  
+       System.out.println(isarm(n));  
+  
+    }  
+    static boolean isarm(int n){  
+        int orignal = n;  
+        int sum=0;  
+        while(n>0){  
+            int rem=n%10;  
+            n=n/10;  
+            sum=sum+rem*rem*rem;  
+        }  
+        return sum==orignal;  
+    }  
+}
+```
+
+For an n-digit number, raise each digit to the nth power and sum them—if the result matches the original number, it's Armstrong. Single-digit numbers (1-9) qualify trivially as 1^1=1
+## Examples
+
+- 153 (3 digits): 13+53+33=1+125+27=15313+53+33=1+125+27=153
+    
+- 370: 33+73+03=27+343+0=37033+73+03=27+343+0=370
+    
+- 1634 (4 digits): 14+64+34+44=1+1296+81+256=163414+64+34+44=1+1296+81+256=1634
+
