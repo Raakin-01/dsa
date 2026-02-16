@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -183,6 +184,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -194,9 +196,9 @@
   },
   "active": "e9523e98f3ab6c71",
   "lastOpenFiles": [
-    "git.md",
-    "java_array.md",
     "java_method.md",
+    "java_array.md",
+    "git.md",
     "java_array",
     "Untitled.base",
     "ok.md",
