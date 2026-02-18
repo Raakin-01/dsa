@@ -26,6 +26,7 @@ arrays are collection of datatypes.
 
 ==**Java array input:**==
 ->the code for java array input is :
+->also in place of entering a value for size of array use arr.length.
 ```
 import java.util.*;
 public class Input {
@@ -50,3 +51,26 @@ public class Input {
     }
 }
 ```
+
+**==printing of array:**==
+->to print the values of array as a string use the Array.toString(arr) to print the code in the form of a string.
+
+```
+import java.util.*;
+
+public class Input {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[] arr = new int[5];
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+**==Array of objects:==**
