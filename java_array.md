@@ -74,3 +74,45 @@ public class Input {
 ```
 
 **==Array of objects:==**
+
+```
+import java.util.*;
+
+public class Output {
+
+    public static void main(String[] args) {
+        System.out.println("hi");
+        String[] str = new String[5];
+        Scanner in = new Scanner(System.in);
+        for (int i = 0; i < str.length; i++) {
+            str[i] = in.next();
+        }
+        for (int i = 0; i < str.length; i++) {
+            System.out.println(str[i]);
+        }
+        // System.out.println(Arrays.toString(str));
+    }
+}
+
+```
+->so array string here is having references in heap memory pointing to these objects.
+
+**==passing of arrays in functions:**==
+
+```
+import java.util.*;
+
+public class Pass {
+
+    public static void main(String[] args) {
+        int[] str = { 1, 2, 3, 4, 5 };
+        change(str);
+        System.out.println(Arrays.toString(str));
+    }
+
+    static void change(int[] arr) {
+        arr[1] = 99;
+    }
+}
+
+```
