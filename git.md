@@ -231,4 +231,5 @@
 
 ->so the thing is now i am in ubuntu and am now trying to use it for pushing the code to github 
 ->once more
-->now it should rememebrt  me  cause :say my name ====hisenberg
+->now it should rememebrt  me  cause :say my name ====hisenberg==
+->now it should work
