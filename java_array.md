@@ -116,5 +116,3 @@ public class Pass {
 }
 
 ```
-
-ok it seems to work
