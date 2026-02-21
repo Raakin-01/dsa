@@ -229,7 +229,3 @@
 
 `Dropped refs/stash@{0} (4c703776fe4eaa4c944c851dd57c278baed44c6d)`
 
-->so the thing is now i am in ubuntu and am now trying to use it for pushing the code to github 
-->once more
-->now it should rememebrt  me  cause :say my name ====hisenberg==
-->now it should work
