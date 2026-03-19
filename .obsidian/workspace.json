@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git.md",
+                "file": "java_array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git"
+              "title": "java_array"
             }
           }
         ]
@@ -196,9 +196,9 @@
   },
   "active": "e9523e98f3ab6c71",
   "lastOpenFiles": [
+    "java_method.md",
     "java_array.md",
     "git.md",
-    "java_method.md",
     "java_array",
     "Untitled.base",
     "ok.md",
