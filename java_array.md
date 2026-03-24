@@ -151,9 +151,9 @@ public class Arr2 {
                 arr[row][col] = in.nextInt();
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j]);
+        for (int row = 0; i < arr.length; i++) {
+            for (int col = 0; j < arr[row].length; j++) {
+                System.out.print(arr[row][col]);
             }
         }
     }
@@ -167,3 +167,32 @@ to access column :
 `for(int i=0;i<arr.length;i++)`
 to access row:
 `for(int j=0;j<arr[i].length;i++)`
+
+->`System.out.println(arr.length)` actually gives the number of rows.
+
+**==Array output:==**
+```
+import java.util.*;
+
+public class Arr2 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[][] arr = new int[3][2];
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                arr[row][col] = in.nextInt();
+            }
+        }
+//        for (int row = 0; row < arr.length; row++) {
+  //          for (int col = 0; col < arr[row].length; col++) {
+    //            System.out.print(arr[row][col]+" ");
+      //      }
+	//    System.out.println("");
+        //}
+	for(int row=0;row<arr.length;row++){
+		System.out.println(Arrays.toString(arr[row]));
+	}
+    }
+}
+```
