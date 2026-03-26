@@ -44,3 +44,29 @@ Non relational databases(noSQL/not just SQL):
 
 Database Queries:
 Queries are request made to the database management system for specific information.
+
+==**Tables And Keys:**==
+A table has 2 things column and rows .
+column is vertical sections of a table
+The columns of the table correspond to the attributes of the record type.
+
+**Primary key:**
+the primary key is always gonna be unique for all attributes.
+->A primary key uniquely defines the row in the Database 
+it uses underline 
+always define a primary key in a table .
+->whenever u want to store data ,define a table and insert the info in that table.
+
+==**surrogate key**==
+its a primary key that has no mapping to anything in real world.
+
+==**natural key**== 
+A primary key that has mapping or purpose in real world.
+
+==**Foreign key**==
+it is a attribute that can be stored in a table that can link us to another database table.
+->Foreign key stores  the primary key of a row in another database table.
+->A table can have more than one branch of foreign key.
+
+**==composite keys==**
+it is a column made of 2 or more foreign keys .
