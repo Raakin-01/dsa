@@ -196,3 +196,35 @@ public class Arr2 {
     }
 }
 ```
+
+**==Array List:==**
+->similar to vectors in c++
+this is the method to intialise the ArrayList:
+
+```
+import java.util.*;
+public class arrayL{
+    public static void main(String[] args){
+        ArrayList<integer> list = new ArrayList<>();
+    }
+}
+```
+
+working example:
+
+```
+import java.util.*;
+public class arrayL{
+    public static void main(String[] args){
+        ArrayList<Integer> list = new ArrayList<>(10);
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        System.out.println(list);
+    }
+}
+
+```
+
